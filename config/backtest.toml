@@ -4,5 +4,5 @@ batchSize = 50
 daterange = "scan"
 # or specify it like so:
 # [daterange]
-# from = "2015-01-01"
-# to = "2016-01-01"
+# from = "2021-01-01"
+# to = "2021-11-11"

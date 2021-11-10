@@ -1,43 +1,64 @@
-# This repo is not maintained anymore
 
-I am officially not maintaining this project anymore. It was an amazing journey and I want to thank everyone for
-playing the role in this amazing story!
+# Gekko Allinone Docker
+ 
+Gekko is a Bitcoin TA trading and backtesting platform that connects to popular Bitcoin exchanges. It is written in JavaScript and runs on [Node.js LTS](http://nodejs.org).
+ ## Note previously Contaner was instable I can't update more. (lodash problem)
+ 
+ ##  Add somes Gekko strategies from xFFFFF and backtest tool for docker container autobuild
+ 
+ ## Build on:
+ 
+ - Nodejs actualy 10.XX...
+ - Redis 3.0.2
+ - mathjs
+ - convnet
+ - tulind and talib
+ 
+ ## Added
+ - Gekko strategies
+ - gekkoga + Ui
+ - backtestTool
 
-More details can be found here: [https://medium.com/@gekkoplus/archiving-open-source-gekko-dba02e6efc7](https://medium.com/@gekkoplus/archiving-open-source-gekko-dba02e6efc7)
+Somes dependency were added to initial script from b16b00b5.
 
-This only impacts my Gekko repo (askmike/gekko). There might be other forks of Gekko out there that are being maintained!
+# Install with docker
 
-------
+## Environnement variable
 
-Old content:
+HOST 192.168.x.x
 
-------
+PORT 3000
+
+MEMORYNODE 2048
+
+USE_SSL 0
+
+Prefer to use the real ip of the machine to test.
+Ajust MEMORYNODE for max memory size under the limit of memory of container -10% was good
+ 
 
 
-# Gekko [![npm](https://img.shields.io/npm/dm/gekko.svg)]() [![Build Status](https://travis-ci.org/askmike/gekko.png)](https://travis-ci.org/askmike/gekko) [![Build status](https://ci.appveyor.com/api/projects/status/github/askmike/gekko?branch=stable&svg=true)](https://ci.appveyor.com/project/askmike/gekko)
 
-![Gordon Gekko](http://mikevanrossum.nl/static/gekko.jpg)
+#### Before start container set the correct IP adress and local Port.
+If you change Ip: localhost to another and start container and it be wrong IP. change manualy IP on
+nano /usr/src/app/web/vue/dist/UIconfig.js or delete container and rebuild
 
-*The most valuable commodity I know of is information.*
+### To work with UI of gekkoga 
+read DustinJSilk/gekkoga-plus-ui git repos
 
--Gordon Gekko
 
-Gekko is a Bitcoin TA trading and backtesting platform that connects to popular Bitcoin exchanges. It is written in JavaScript and runs on [Node.js](http://nodejs.org).
 
-*Use Gekko at your own risk.*
+## TODO
+- Clean dependency and somes strategies who doesnt work.
 
-## Documentation
-
-See [the documentation website](https://gekko.wizb.it/docs/introduction/about_gekko.html).
-
-## Installation & Usage
-
-See [the installing Gekko doc](https://gekko.wizb.it/docs/installation/installing_gekko.html).
+## Go to these GITHUB to add some new fonction for all
+https://github.com/viking76/gekko-archive.git
 
 ## Community & Support
 
 Gekko has [a forum](https://forum.gekko.wizb.it/) that is the place for discussions on using Gekko, automated trading and exchanges. In case you rather want to chat in realtime about Gekko feel free to join the [Gekko Support Discord](https://discord.gg/26wMygt).
 
 ## Final
+Goodbye askmike thanks for you effort
 
 If Gekko helped you in any way, you can always leave me a tip at (BTC) 13r1jyivitShUiv9FJvjLH7Nh1ZZptumwW
